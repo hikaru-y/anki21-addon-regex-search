@@ -1,0 +1,6 @@
+{
+    "wildcard matching on field names": {
+        "character": "*",
+        "enabled": true
+    }
+}
