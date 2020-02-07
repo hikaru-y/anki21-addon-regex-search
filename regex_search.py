@@ -9,7 +9,7 @@
 import re
 import sre_constants
 import unicodedata
-from typing import Optional
+# from typing import Optional
 from aqt import mw
 from anki.utils import ids2str, splitFields
 from anki.find import Finder
@@ -53,7 +53,8 @@ def _findText_wrapper(self, val, args, _old) -> str:
         return _old(self, val, args)
 
 
-def _findField_wrapper(self, field, val, _old) -> Optional[str]:
+# def _findField_wrapper(self, field, val, _old) -> Optional[str]:
+def _findField_wrapper(self, field, val, _old):
     match = re.fullmatch(r'/(.+)/(i?)', val)
 
     if not((WILDCARD_CHAR in field) or match):
